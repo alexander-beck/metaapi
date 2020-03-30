@@ -55,7 +55,7 @@ export interface IAPIModelRegistry {
 
 export interface IAPIResult<Success> {
   isSuccess(): boolean;
-  success(): Success;
+  success(): Success | undefined;
   error(): Error;
 
   response(): any;
